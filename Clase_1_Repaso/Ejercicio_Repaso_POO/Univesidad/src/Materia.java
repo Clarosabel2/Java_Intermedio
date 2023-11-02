@@ -21,11 +21,7 @@ public class Materia  {
     public int getId_Materia() {
         return id_Materia;
     }
-
-    public void setId_Materia(int id_Materia) {
-        this.id_Materia = id_Materia;
-    }
-
+    
     public String getNombre_Materia() {
         return nombre_Materia;
     }
