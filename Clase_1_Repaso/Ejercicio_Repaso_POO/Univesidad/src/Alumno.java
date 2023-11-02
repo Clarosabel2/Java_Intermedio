@@ -21,10 +21,6 @@ public class Alumno {
         return id_Alumno;
     }
 
-    public void setId_Alumno(int id_Alumno) {
-        this.id_Alumno = id_Alumno;
-    }
-
     public String getNombre() {
         return nombre;
     }
