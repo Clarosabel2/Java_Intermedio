@@ -15,6 +15,7 @@ public class Main {
         paradigmasProgramacion.setMateriaCorrelativa(algEstructDatos);
         diseñoSistemas.setMateriaCorrelativa(paradigmasProgramacion);
 
+        //Pruebas
         System.out.println("Alumno 2:");
         if(Incripcion.aprobada(alumno2,diseñoSistemas)){
             System.out.println("Inscripto");
