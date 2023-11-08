@@ -17,15 +17,15 @@ public class Main {
         //mayus(nombres).forEach(System.out::println);
 
         System.out.println(concatenar(nombres,5));
+        var palabras=nombres.stream().map(x->x.toUpperCase())
     }
 
     public static List<String>mayus(List<String>palabras){
         return palabras.stream().map(x->x.toUpperCase()).collect(Collectors.toList());
     }
     public static String concatenar(List<String>palabras, int n){
-        List<String>result=palabras.stream().filter(x->x.length()>n).collect(Collectors.toList());
-        String cadena=String.join(", ",result);
-        String msg=(cadena.equals(""))?"Null":cadena;
+        String result=palabras.stream().filter(x->x.length()>n).collect(Collectors.joining(", "));
+        String msg=(result.equals(""))?"Null":result;
         return msg;
     }
 }
